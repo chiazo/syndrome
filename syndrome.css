@@ -1,0 +1,45 @@
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+/* == HTML == */
+
+html {
+	box-sizing: border-box; /* natural box layout that resizes */
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* body */
+body {
+	font-family: "Alata";
+}
+
+/* paragraph */
+
+/* == HEADERS == */
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+	
+}
+/* == TABLES ==  */
+/* grid */
+
+/* box-insert */
+
+/* code-insert */
+
+/* == UI COMPONENTS == */
+
+/* buttons */
+
+/* form */
+
