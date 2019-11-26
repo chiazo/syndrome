@@ -41,6 +41,7 @@ hr { /* horizontal line divider */
   }
 
 /* == TABLES ==  */
+
 /* grid */
 .wrapper {
 	max-width: 1200px;
@@ -125,7 +126,6 @@ textarea {
 	margin-bottom: 2%;
 	display: block;
 	background: transparent;
-	vertical-align: middle;
 	width: 100%;
 	max-width: 100%;
 	border-radius: 4px;
@@ -146,7 +146,7 @@ textarea {
 	color: #3fbb9c;
   }
 
-/* == RESIZE COMPONENTS == */
+/* == BREAKPOINTS == */
 
 @media screen and (min-width: 650px) {
   .wrapper {
@@ -172,7 +172,22 @@ textarea {
 
 }
 
-
-
-
+/* == NOTES ON CSS PRINCIPLES == */
+/* font size */
+/* Em vs Rm
+* scalable units that are translated by browser into pixel values;
+* allows for increased flexibility
+* -> rem: depends on font size of page's root element (ex: html)
+* ------> ex: if root's font size is 10px, 5rem => 50px
+* -> em: depends on font size of specific element it is used on
+* -> can be impacted by inheritance (bc elements inherit the font size
+*    of their parent)
+* ------> ex: if div's font size is 5px, 5em => 25px
+* rem is usually better to use; try not to set the html font size
+* using px; use rem or em instead to work of user's settings
+* when to use rem: font sizing based on browser settings
+* when to use em: scale elements with non-default font size
+--------> ex: margin, padding, width, height, line-height, drop down menu
+* dont use either for: column widths (only in max-width)
+*/
 
