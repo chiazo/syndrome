@@ -5,6 +5,9 @@
 
 html {
 	box-sizing: border-box; /* natural box layout that resizes */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.4;
 }
 
 *, *:before, *:after {
@@ -12,26 +15,77 @@ html {
 }
 
 /* body */
-body {
+head, body {
 	font-family: "Alata";
+	text-align: justify; 
+	color: #444444;
+	background-color: #fdfdfd;
 }
 
 /* paragraph */
 
 /* == HEADERS == */
-h1 {
-
-}
-
-h2 {
-
-}
-
+h1,
+h2,
 h3 {
-	
+  color: #444444;
+  line-height: 1.2;
 }
+
+h1 {
+  font-size: 2.6rem;
+}
+
+hr { /* horizontal line divider */
+	color: #444444;
+  }
+
 /* == TABLES ==  */
 /* grid */
+.wrapper {
+	max-width: 1200px;
+	text-align: center;
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  }
+  
+  .first {
+	padding: 5%;
+	text-align: center;
+	align-items: center;
+  }
+  
+  .fourth {
+	  overflow: scroll;
+  }
+  
+  .container::before,
+  .container::after {
+	display: table;
+	content: "";
+	clear: both;
+	width: 100%;
+  }
+  
+  .fourth, .third {
+	  max-height: 300px;
+	  overflow: scroll;
+  }
+  
+  .container {
+	border: 1px solid rgb(116, 116, 116);
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transition: all 0.3s ease;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.05);
+	background-color: #fefefe;
+	max-width: 650px;
+	width: 100%;
+  }
 
 /* box-insert */
 
@@ -41,5 +95,84 @@ h3 {
 
 /* buttons */
 
+[type="button"],
+[type="submit"] {
+  display: inline-block;
+  background: #3fbbb5c4;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #fefefe;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1;
+  margin: 0.25rem 0;
+  border-radius: 21px;
+  max-width: 90%;
+  margin-bottom: 3%;
+}
+
 /* form */
+
+textarea {
+	max-width: 100%;
+	padding: 2%;
+	margin-bottom: 2%;
+	display: block;
+	background: transparent;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 100%;
+	border-radius: 4px;
+  }
+
+.mainForm {
+	border: 4px double #fefefe;
+	padding: 10px;
+	align-content: center;
+  }
+  
+  .finish {
+	align-content: center;
+  }
+  
+  .subtitle {
+	font-weight: 700;
+	color: #3fbb9c;
+  }
+
+/* == RESIZE COMPONENTS == */
+
+@media screen and (min-width: 650px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .container {
+    width: 47%;
+    flex: 1 1 auto;
+    margin: 10px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+}
+
+
+
+
 
