@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap");
+/* == HTML == */
+html {
+  box-sizing: border-box;
+  /* natural box layout that resizes */
+  font-family: "Space Mono", monospace;
+  background-color: #fdfdfd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+div {
+  display: block; }
+
+/* body */
+head, body {
+  text-align: justify;
+  color: #444444;
+  background-color: #fdfdfd;
+  padding: 1.5rem; }
+
+body {
+  box-sizing: border-box; }
+
+a:hover {
+  text-decoration: underline;
+  color: #3fbb9c; }
+
+/* paragraph */
+/* == HEADERS == */
+h1,
+h2,
+h3 {
+  color: #444444;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 2.6rem; }
+
+hr {
+  /* horizontal line divider */
+  color: #444444; }
+
+/* site title */
+.site-header {
+  background-color: #ffffff;
+  top: 10%;
+  margin-top: 21px;
+  z-index: 1000;
+  border-bottom: 2px solid #c1c1c1; }
+
+.site-title {
+  font-size: 1.7rem;
+  color: black; }
+
+.site-header, .site-title {
+  padding: .5rem; }

@@ -1,0 +1,18 @@
+ /* site title */
+
+ .site-header {
+    background-color: $header-bg;
+    top: 10%;
+    margin-top: 21px;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(193, 193, 193);
+  }
+  
+  .site-title {
+    font-size: 1.7rem;
+    color: black;
+  }
+
+  .site-header, .site-title {
+    padding: .5rem;
+  }

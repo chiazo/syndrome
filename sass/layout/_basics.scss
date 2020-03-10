@@ -1,0 +1,53 @@
+/* == HTML == */
+
+html {
+    box-sizing: border-box; /* natural box layout that resizes */
+    font-family: $font-family;
+    background-color: $bg-color;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: $line-height;
+  }
+  
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  /* body */
+  head, body {
+      text-align: justify; 
+      color: $font-color;
+      background-color: $bg-color;
+      padding: 1.5rem;
+  }
+  
+  body {
+    box-sizing: border-box;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: $a-hover;
+  }
+  
+  /* paragraph */
+  
+  /* == HEADERS == */
+  h1,
+  h2,
+  h3 {
+    color: $font-color;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: $h1-size;
+  }
+  
+  hr { /* horizontal line divider */
+      color: $font-color;
+    }
