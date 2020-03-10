@@ -1,0 +1,42 @@
+/* form */
+
+textarea {
+	max-width: 100%;
+	padding: 2%;
+	margin-bottom: 2%;
+	display: block;
+	background: transparent;
+	width: 100%;
+	max-width: 100%;
+    border-radius: 4px;
+    height: auto;
+  }
+
+.main-form {
+	border: 4px double #fefefe;
+	padding: 10px;
+	align-content: center;
+  }
+
+.stack-form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.stack-form label {
+  margin: 5px 10px 5px 0;
+}
+
+.stack-form button:hover {
+  background-color: #fdfdfd;
+}
+  
+  .finish {
+	align-content: center;
+  }
+  
+  .subtitle {
+	font-weight: 700;
+	color: #3fbb9c;
+  }

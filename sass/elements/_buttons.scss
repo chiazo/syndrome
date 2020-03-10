@@ -1,0 +1,38 @@
+/* == UI COMPONENTS == */
+
+/* buttons */
+
+[type="button"],
+[type="submit"], button, .a-button {
+
+  display: inline-block;
+  background: $button-color;
+ 
+  color: $button-font;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: $font-family;
+  padding: .6rem 1.2rem;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid $button-color;
+  cursor: pointer;
+//   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  line-height: 1;
+  // margin: 0.25rem 0;
+  border-radius: 10px;
+  max-width: 90%;
+  margin-bottom: 3%;
+}
+
+.buttons {
+  text-align: justify;
+}
+
+.buttons::after {
+  content:"";
+  display: flex;
+  // width: 99.5%;
+}

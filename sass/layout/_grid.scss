@@ -1,0 +1,87 @@
+/* == TABLES ==  */
+
+td {
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  /* grid */
+  .column {
+    float: left;
+    padding: 30px;
+    text-align: justify;
+  }
+  
+  .column img {
+    max-width: 320px;
+    max-height: 400px;
+    border: 13px solid #fefefe;
+  }
+  
+  .col-img { // div containing image within column
+    width: 50%;
+  }
+  
+  .col-text {
+    width: 45%;
+    text-align: justify;
+  }
+  
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+      text-align: justify;
+    }
+  
+    .column img {
+      max-width: 320px;
+      max-height: 400px;
+    }
+  }
+  
+  /* photo grid */
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+  }
+  
+  .respon-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cell img {
+    display: block;
+    object-fit: cover;
+  }
+  
+  .cell {
+    margin: 1rem;
+  
+  }
+  
+  @media screen and (min-width: 600px) {
+  
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  
+    .cell {
+      width: calc(50% - 2rem);
+  
+    }
+  }

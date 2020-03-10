@@ -1,0 +1,95 @@
+ /* PANEL GRID */
+
+ .projects {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    position: relative;
+  }
+  
+  .panel {
+    flex: 1;
+    flex-basis: 45%;
+    min-width: 300px;
+    height: 420px;
+    width: 300px;
+    max-width: 25%;
+    position: relative;
+    border: 1px solid #efefef;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .panel-image {
+    height: 140px;
+    width: 94%;
+    border: 5px double rgb(138, 138, 138);
+    position: absolute;
+    bottom: 0px;
+    background-size: cover;
+    background-position: 55% 45%;
+    background-repeat: no-repeat;
+    margin: 10px;
+    background-color: #fabaca;
+    transition: transform .2s;
+  }
+  
+  .panel-image:hover {
+    transform: scale(1.2);
+  }
+  
+  .panel:hover {
+    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .panel h1 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .subtitle {
+    margin: 0 0 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .panel p {
+    margin: 0 0 30px;
+  }
+  
+  .panel-content {
+    padding: 30px 30px 30px;
+  
+  }
+  
+  .panel-content h1 {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #ffffff 40%);
+  }
+
+  .post-content a {
+    color: black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #ffb5b5 30%);
+  }
+  
+  .post-content a:hover {
+    color: black;
+    background: none;
+  }
+  
+  .panel a {
+      color: black;
+      background: none;
+  }
+  
+  .panel a:hover {
+    color: black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #ffb5b5 30%);
+  }

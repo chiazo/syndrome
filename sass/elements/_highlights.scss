@@ -1,0 +1,25 @@
+/* == WORD HIGHLIGHTS == */
+
+.highlight-yellow {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, $yellow-highlight 40%);
+  }
+  
+  .highlight-blue {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, $blue-highlight 30%);
+  }
+  
+  .highlight-green {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, $green-highlight 30%);
+  }
+  
+  .highlight-red {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, $red-highlight 30%);
+  }
+  
+  .highlight-purple {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, $purple-highlight 30%);
+  }
+  
+  .highlight-grey {
+    background: linear-gradient(180deg, rgba(255, 255, 255, .2) 90%, $font-color 30%);
+  }

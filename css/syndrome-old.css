@@ -482,7 +482,7 @@ textarea {
 
 /* == WORD HIGHLIGHTS == */
 
-.highlight {
+.highlight-yellow {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #ffde75 40%);
 }
 
@@ -498,11 +498,11 @@ textarea {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #ffb5b5 30%);
 }
 
-.highlight-purp {
+.highlight-purple {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #e8b5ff 30%);
 }
 
-.highlight-purp2 {
+.highlight-grey {
   background: linear-gradient(180deg, rgba(255, 255, 255, .2) 90%, #4444 30%);
 }
 

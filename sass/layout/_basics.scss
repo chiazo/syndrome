@@ -22,7 +22,7 @@ html {
       text-align: justify; 
       color: $font-color;
       background-color: $bg-color;
-      padding: 1.5rem;
+      padding: 1.2rem;
   }
   
   body {
@@ -30,7 +30,7 @@ html {
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: $a-hover;
   }
   
@@ -47,7 +47,4 @@ html {
   h1 {
     font-size: $h1-size;
   }
-  
-  hr { /* horizontal line divider */
-      color: $font-color;
-    }
+ 
