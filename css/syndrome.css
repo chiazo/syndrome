@@ -2,10 +2,12 @@
 /* == UI COMPONENTS == */
 /* buttons */
 [type="button"],
-[type="submit"], button, .a-button {
+[type="submit"], button,
+.a-button,
+.yellow-button,
+.transp-button,
+.green-button {
   display: inline-block;
-  background: #b4d0fa3a;
-  color: #3448ff;
   text-decoration: none;
   font-size: 1rem;
   font-family: "Space Mono", monospace;
@@ -13,7 +15,6 @@
   vertical-align: middle;
   text-align: center;
   font-weight: 500;
-  border: 2px solid #b4d0fa3a;
   cursor: pointer;
   white-space: nowrap;
   line-height: 1;
@@ -21,6 +22,30 @@
   max-width: 90%;
   margin-bottom: 3%;
   margin-top: 10px; }
+
+[type="button"],
+[type="submit"], button,
+.a-button {
+  background: #b4d0fa3a;
+  color: #3448ff;
+  border: 2px solid #b4d0fa3a; }
+
+.pink-button {
+  background: #f2deff;
+  color: #900098;
+  border: 2px solid #f2deff; }
+
+.green-button {
+  background: #ebffde;
+  color: #039800;
+  border: 2px solid #d7ffbd; }
+
+.transp-button {
+  background: none;
+  color: #444444; }
+
+.transp-button:hover {
+  background-color: #ffffb1; }
 
 .a-button:hover {
   background-color: none; }

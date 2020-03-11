@@ -3,11 +3,12 @@
 /* buttons */
 
 [type="button"],
-[type="submit"], button, .a-button {
+[type="submit"], button,
+.a-button,
+.yellow-button,
+.transp-button,
+.green-button {
   display: inline-block;
-  background: $button-color;
- 
-  color: $button-font;
   text-decoration: none;
   font-size: 1rem;
   font-family: $font-family;
@@ -15,7 +16,6 @@
   vertical-align: middle;
   text-align: center;
   font-weight: 500;
-  border: 2px solid $button-color;
   cursor: pointer;
 //   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
@@ -25,6 +25,36 @@
   max-width: 90%;
   margin-bottom: 3%;
   margin-top: 10px;
+}
+
+[type="button"],
+[type="submit"], button,
+.a-button {
+  background: $button-color;
+  color: $button-font;
+  border: 2px solid $button-color;
+}
+
+.pink-button {
+  background: #f2deff;
+  color: #900098;
+  border: 2px solid #f2deff;
+}
+
+.green-button {
+  background: #ebffde;
+  color: #039800;
+  border: 2px solid #d7ffbd;
+}
+
+
+.transp-button {
+  background: none;
+  color: $font-color;
+}
+
+.transp-button:hover {
+  background-color: rgb(255, 255, 177);
 }
 
 .a-button:hover {
