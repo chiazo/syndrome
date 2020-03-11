@@ -1,68 +1,78 @@
 /**/
 
-.wrapper {
-	max-width: 1200px;
-	text-align: center;
-	padding: 30px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.wrapper, .container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 0;
+  // border: 1px solid rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+	flex-direction: column;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
   }
+
+
   
-  .first {
-	padding: 5%;
-	text-align: center;
-	align-items: center;
-  }
+  // .first {
+	// padding: 5%;
+	// text-align: center;
+	// align-items: center;
+  // }
   
-  .fourth {
-	  overflow: scroll;
-  }
+  // .fourth {
+	//   overflow: scroll;
+  // }
   
   .container::before,
-  .container::after {
+  .container::after, .wrapper::before,
+  .wrapper::after {
 	display: table;
 	content: "";
 	clear: both;
 	width: 100%;
   }
   
-  .fourth, .third {
-	  max-height: 300px;
-	  overflow: scroll;
-  }
+  // .fourth, .third {
+	//   max-height: 300px;
+	//   overflow: scroll;
+  // }
   
   .container {
-	border: 1px solid rgb(116, 116, 116);
-	margin: 20px;
-	display: flex;
-	justify-content: center;
-  flex-direction: column;
-	transition: all 0.3s ease;
+	border: 1px solid rgb(206, 206, 206);
+	// margin: 20px;
+	// display: flex;
+	// justify-content: center;
+  // flex-direction: column;
+	// transition: all 0.3s ease;
 	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.06);
-	background-color: #fefefe;
-	max-width: 650px;
-	width: 100%;
+	// background-color: #fefefe;
+	// max-width: 650px;
+	// width: 100%;
   }
 
   /* == BREAKPOINTS == */
 
 @media screen and (min-width: 650px) {
-    .wrapper {
+  
+    .wrapper, .container {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-  
-    .container {
-      width: 47%;
-      flex: 1 1 auto;
-      margin: 10px;
-    }
+
   
     h1,
     h2,
-    h3 {
+    h3, 
+    h4 {
       align-content: center;
     //   text-align: center;
       vertical-align: middle;

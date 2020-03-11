@@ -3,12 +3,18 @@
 table {
   border-collapse: collapse;
   text-align: center;
+  overflow-x: auto;
 }
 
 th {
   padding: 1rem;
   border-bottom: 3px solid rgb(186, 186, 186);
   // background-color: $blue-highlight;
+
+}
+
+tr:hover, .alternate tr:nth-child(even):hover {
+  background-color: #effbff;
 }
 
 td {
@@ -25,12 +31,11 @@ td {
 }
 
 .alternate tr:nth-child(even) {
-    background-color: rgb(228, 228, 228);
-
+    background-color: rgb(242, 242, 242);
 }
 
 .colored-header th {
-    background-color: #4ea985;
+    background-color: #4e7aa9;
     color: #fefefe;
 }
 
@@ -134,8 +139,9 @@ td {
     }
 
     .cell-1x1 > .cell {
-      width: calc(60% - 2rem);
+      width: 100%;
       min-width: 340px;
+      max-width: 600px;
     }
 
   }

@@ -11,13 +11,15 @@
 <body>
     <header class="site-header">
         <div class="site-title">
-            <h1>Syndrome</h1>
+            <h1><span class="highlight-blue">Syndrome</span></h1>
+            <h6>A CSS framework built in Sass by Chiazo</h6>
         </div>
     </header>
 
     <div>
         <h2>What is it?</h2>
-        <p><span class="highlight-yellow">Syndrome</span> is a stylesheet compiled into CSS via Sass to make my life easier when setting up future projects.
+        <p><span class="highlight-yellow">Syndrome</span> is a stylesheet compiled into CSS via Sass to make my life
+            easier when setting up future projects.
         </p>
     </div>
     <div>
@@ -35,15 +37,15 @@
     </div>
     <div>
         <h2 id="grids">Grids</h2>
-        <p>Grids can be used for anything and are responsive. <b>Class Name: <u>Grid</u></b></p>
-        <h4>1x1 <span class="highlight-green">(class="cell-1x1")</span></h4>
+        <p>Grids can be used for anything and are responsive. <b>Class Name: <u>grid</u></b></p>
+        <h4>1x1 <span class="highlight-yellow">(class="cell-1x1")</span></h4>
         <div class="wrapper">
             <div class="grid cell-1x1">
                 <div class="cell">Cell 1</div>
                 <div class="cell">Cell 2</div>
             </div>
         </div>
-        <h4>2x2 <span class="highlight-green">(class="cell-2x2")</span></h4>
+        <h4>2x2 <span class="highlight-yellow">(class="cell-2x2")</span></h4>
         <div class="wrapper">
             <div class="grid cell-2x2">
                 <div class="cell">Cell 1</div>
@@ -52,7 +54,7 @@
                 <div class="cell">Cell 4</div>
             </div>
         </div>
-        <h4>2x6 <span class="highlight-green">(class="cell-2x6")</span></h4>
+        <h4>2x6 <span class="highlight-yellow">(class="cell-2x6")</span></h4>
         <div class="wrapper">
             <div class="grid cell-2x6">
                 <div class="cell">Cell 1</div>
@@ -67,7 +69,7 @@
                 <div class="cell">Cell 10</div>
             </div>
         </div>
-        <h4>3x3 <span class="highlight-green">(class="cell-3x3")</span></h4>
+        <h4>3x3 <span class="highlight-yellow">(class="cell-3x3")</span></h4>
         <div class="wrapper">
             <div class="grid cell-3x3">
                 <div class="cell">Cell 1</div>
@@ -81,11 +83,11 @@
                 <div class="cell">Cell 9</div>
             </div>
         </div>
-        
+
     </div>
     <div>
         <h2 id="tables">Tables</h2>
-        <p>Tables can be edited or just used to display information.</p>
+        <p>Tables can be edited or just used to display information. </p>
         <h4>Normal Table</h4>
         <div class="wrapper">
             <table>
@@ -110,7 +112,7 @@
                 </tbody>
             </table>
         </div>
-        <h4>Without Borders</h4>
+        <h4>Without Borders <span class="highlight-green">(class="borderless")</span></h4>
         <div class="wrapper">
             <table class="borderless">
                 <thead>
@@ -134,7 +136,7 @@
                 </tbody>
             </table>
         </div>
-        <h4>Alternating Colored Rows</h4>
+        <h4>Alternating Colored Rows <span class="highlight-green">(class="alternate")</span></h4>
         <div class="wrapper">
             <table class="alternate">
                 <thead>
@@ -163,7 +165,7 @@
                 </tbody>
             </table>
         </div>
-        <h4>Colored Header</h4>
+        <h4>Colored Header <span class="highlight-green">(class="colored-header")</span></h4>
         <div class="wrapper">
             <table class="colored-header">
                 <thead>
@@ -189,40 +191,109 @@
         </div>
     </div>
     <div>
-        <h2 id="containers">Containers</h2>
-        <p>Divs that hold things in a stylish way.</p>
+        <h2 id="containers">Containers + Wrappers</h2>
+        <p>Divs that hold things in a stylish way. Use the container to hold multiple things & save the wrapper for 1!
+            <b>Class Names: <u>container, wrapper</u></b></p>
         <div class="wrapper">
-            <h4>Wrapper</h4>
+            <div>
+                <h4>Wrapper</h4>
+            </div>
         </div>
         <div class="container">
-            <h4>Container</h4>
+            <div>
+                <h4>Container</h4>
+            </div>
         </div>
     </div>
     <div>
         <h2 id="text-headers">Text + Headers</h2>
         <p>Here are all the different ways text can appear.</p>
-        <h1>H1: Syndrome</h1>
-        <h2>H2: Syndrome</h2>
-        <h3>H3: Syndrome</h3>
-        <h4>H4: Syndrome</h4>
-        <h5>H5: Syndrome</h5>
-        <h6>H6: Syndrome</h6>
-        <p>P: Syndrome</p>
+        <div class="text-headers">
+            <h1>H1: Syndrome</h1>
+            <h2>H2: Syndrome</h2>
+            <h3>H3: Syndrome</h3>
+            <h4>H4: Syndrome</h4>
+            <h5>H5: Syndrome</h5>
+            <h6>H6: Syndrome</h6>
+            <p>P: Syndrome</p>
+            <p><b>Bold: Syndrome</b></p>
+            <p><u>Underlined: Syndrome</u></p>
+            <a href="#text-headers">Anchor: Syndrome</a>
+        </div>
     </div>
     <div>
         <h2 id="forms">Forms</h2>
         <p>Forms take in user input. Save the information for later or dont; it's up to you.'</p>
+        <h4>Normal Form</h4>
         <div class="container">
-            <div class="main-form" style="flex-grow: 1">
+            <div class="main-form">
                 <form id="input-form">
-                    <h2>Insert Story Here!</h2>
-                    <label> </label>
-                    <input type="text" name="story" id="story" rows="50" size="50" value="" />
-                    <input type="button" name="submit_b" id="submit_b" value="Submit!" />
-
+                    <fieldset>
+                        <legend>Fill Out This Form: </legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name..."/>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email..."/>
+                        <br>
+                        <label for="category">Category</label>
+                        <select id="category" size="2" multiple>
+                            <option value="school" selected>School</option>
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                        </select>
+                        <br>
+                        <label for="text-field">Text Input</label>
+                        <textarea name="text-field" rows="3" cols="30"></textarea>
+                        <button type="button" name="submit_b" id="submit_b">Submit!</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
+        <h4>Table Form</h4>
+        <div class="">
+            <div class="table">
+                <div class="thead">
+                    <tr class="tr">
+                        <div class="td">Task Name</div>
+                        <div class="td">Est. Time (mins)</div>
+                        <div class="td">Category</div>
+                    </tr>
+                </div>
+                <div class="tbody">
+                    <form class="tr" id="task-form" method="post">
+                        <span class="td"><input type="text" placeholder="Task Name"/></span>
+                        <span class="td"><input type="number" value="20" placeholder="20 mins"/></span>
+                        <span class="td"><select>
+                            <option value="school" selected>School</option>
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                        </select></span>
+                    </form>
+                    <div class="tr">
+                        <span class="td"><input type="text" placeholder="Task Name"/></span>
+                        <span class="td"><input type="number" placeholder="20 mins"/></span>
+                        <span class="td"><select>
+                            <option value="school" selected>School</option>
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                        </select></span>
+                    </div>
+                    <div class="tr">
+                        <span class="td"><input type="text" placeholder="Task Name"/></span>
+                        <span class="td"><input type="number" placeholder="20 mins"/></span>
+                        <span class="td"><select>
+                            <option value="school" selected>School</option>
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                        </select></span>
+                    </div>
+                    <button type="submit" name="submit_b" id="submit_b" form="task-form">Submit!</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="thead">
     </div>
     <div>
         <h2 id="all-buttons">Buttons</h2>

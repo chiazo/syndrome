@@ -7,6 +7,7 @@ html {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: $line-height;
+      padding: 30px;
   }
   
   *, *:before, *:after {
@@ -28,12 +29,26 @@ html {
   body {
     box-sizing: border-box;
   }
-  
-  a:hover {
-    text-decoration: none;
-    color: $a-hover;
+
+/* Anchors */
+
+a {
+  border-bottom: 3px solid #beebaa44;
+  color: $a;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+  a:hover:not(.a-button) {
+    background-color: #beebaa44;
   }
   
+  ::selection {
+    background-color: $yellow-highlight;
+    color: $font-color;
+  }
+
   /* paragraph */
   
   /* == HEADERS == */
@@ -43,12 +58,18 @@ html {
   h4 {
     color: $font-color;
     line-height: 1.2;
-    padding-top: 1rem;
-    padding-bottom: .1rem;
-    margin-bottom: .1rem;
   }
   
   h1 {
     font-size: $h1-size;
   }
  
+  h4 {
+    // margin: 1rem;
+    // border: 1px solid black;
+    padding: 20px;
+  }
+
+  :focus {
+    outline: none;
+  }

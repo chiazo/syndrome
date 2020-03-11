@@ -4,7 +4,6 @@
 
 [type="button"],
 [type="submit"], button, .a-button {
-
   display: inline-block;
   background: $button-color;
  
@@ -25,8 +24,17 @@
   border-radius: 10px;
   max-width: 90%;
   margin-bottom: 3%;
+  margin-top: 10px;
 }
 
+.a-button:hover {
+  background-color: none;
+}
+
+[type="button"]:hover,
+[type="submit"]:hover, button:hover {
+  background-color: white;
+}
 
 .buttons {
   text-align: justify;
