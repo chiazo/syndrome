@@ -1,13 +1,40 @@
 /* == TABLES ==  */
 
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  padding: 1rem;
+  border-bottom: 3px solid rgb(186, 186, 186);
+  // background-color: $blue-highlight;
+}
+
 td {
-    border: 1px solid gray;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+    border-bottom: 1.7px solid rgb(205, 205, 205);
+    padding: 1.5rem;
+    // width: 30px;
+    // height: 30px;
+    // text-align: center;
     cursor: pointer;
   }
   
+.borderless td {
+    border: none;
+}
+
+.alternate tr:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+
+}
+
+.colored-header th {
+    background-color: #4ea985;
+    color: #fefefe;
+}
+
+
   
   /* grid */
   .column {

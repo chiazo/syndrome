@@ -36,14 +36,14 @@
     <div>
         <h2 id="grids">Grids</h2>
         <p>Grids can be used for anything and are responsive. <b>Class Name: <u>Grid</u></b></p>
-        <h4>1x1 <span class="highlight-purple">(class="cell-1x1")</span></h4>
+        <h4>1x1 <span class="highlight-green">(class="cell-1x1")</span></h4>
         <div class="wrapper">
             <div class="grid cell-1x1">
                 <div class="cell">Cell 1</div>
                 <div class="cell">Cell 2</div>
             </div>
         </div>
-        <h4>2x2 <span class="highlight-purple">(class="cell-2x2")</span></h4>
+        <h4>2x2 <span class="highlight-green">(class="cell-2x2")</span></h4>
         <div class="wrapper">
             <div class="grid cell-2x2">
                 <div class="cell">Cell 1</div>
@@ -52,7 +52,7 @@
                 <div class="cell">Cell 4</div>
             </div>
         </div>
-        <h4>2x6 <span class="highlight-purple">(class="cell-2x6")</span></h4>
+        <h4>2x6 <span class="highlight-green">(class="cell-2x6")</span></h4>
         <div class="wrapper">
             <div class="grid cell-2x6">
                 <div class="cell">Cell 1</div>
@@ -67,7 +67,7 @@
                 <div class="cell">Cell 10</div>
             </div>
         </div>
-        <h4>3x3 <span class="highlight-purple">(class="cell-3x3")</span></h4>
+        <h4>3x3 <span class="highlight-green">(class="cell-3x3")</span></h4>
         <div class="wrapper">
             <div class="grid cell-3x3">
                 <div class="cell">Cell 1</div>
@@ -86,23 +86,105 @@
     <div>
         <h2 id="tables">Tables</h2>
         <p>Tables can be edited or just used to display information.</p>
+        <h4>Normal Table</h4>
         <div class="wrapper">
             <table>
-                <tr>
-                    <th>First Header</th>
-                    <th>Second Header</th>
-                    <th>Third Header</th>
-                </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                    <td>Cell 3</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                        <th>Third Header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Without Borders</h4>
+        <div class="wrapper">
+            <table class="borderless">
+                <thead>
+                    <tr>
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                        <th>Third Header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Alternating Colored Rows</h4>
+        <div class="wrapper">
+            <table class="alternate">
+                <thead>
+                    <tr>
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                        <th>Third Header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Colored Header</h4>
+        <div class="wrapper">
+            <table class="colored-header">
+                <thead>
+                    <tr>
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                        <th>Third Header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -155,7 +237,7 @@
         <h2 id="lists">Lists</h2>
         <p>Who doesn't love listing things?</p>
     </div>
-
+    <a href="#top" id="return-top" class="return-top">Return to Top</a>
 
 
 
