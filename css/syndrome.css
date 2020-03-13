@@ -65,7 +65,6 @@
 form {
   width: 100%;
   flex-grow: 1;
-  padding: 10px;
   align-content: center; }
 
 input,
@@ -158,23 +157,27 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.4;
-  padding: 30px; }
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  scroll-behavior: smooth; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
 div {
-  display: block; }
+  margin-bottom: 1rem; }
 
 /* body */
 head, body {
   text-align: justify;
   color: #444444;
-  background-color: #fdfdfd;
-  padding: 1.2rem; }
+  background-color: #fdfdfd; }
 
 body {
-  box-sizing: border-box; }
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: min-content 1fr; }
 
 /* Anchors */
 a {
@@ -355,14 +358,22 @@ td {
 /* site title */
 .site-header {
   background-color: #ffffff;
-  top: 10%;
-  margin-top: 21px;
+  grid-column: 1 / 3;
+  top: 0;
+  padding-top: 1px;
+  padding-bottom: 0;
+  margin-bottom: 0;
   z-index: 1000;
-  border-bottom: 2px solid #d7d6d6; }
+  border-bottom: 2px solid #d7d6d6;
+  position: static; }
 
 .site-title {
   font-size: 1.7rem;
   color: black; }
+
+.site-header h6 {
+  padding-bottom: 1rem;
+  margin: 0; }
 
 .text-headers {
   text-align: center; }
@@ -422,6 +433,74 @@ td {
     box-shadow: 20px 20px 5px lightgray;
     transition: all 10 s ease-in-out;
     -webkit-transition: all 10 s ease; } }
+
+.navigation {
+  padding: 1px 10px;
+  margin: 0 20px;
+  width: 220px;
+  position: fixed;
+  z-index: 2;
+  bottom: 0px;
+  top: 160px;
+  overflow: hidden;
+  color: #1f59b0;
+  border-right: 2px solid lightgray;
+  white-space: nowrap; }
+
+.on-scroll {
+  top: 0; }
+
+.landing {
+  margin-left: 220px;
+  height: auto;
+  padding: 0 3rem 40rem;
+  width: 100%;
+  z-index: 1; }
+
+section {
+  padding: 2rem;
+  margin: 0 0 0; }
+
+@media (min-height: 300px) {
+  .navigation ul {
+    position: sticky;
+    top: 0; } }
+
+.navigation a {
+  display: block;
+  height: 60%; }
+
+.navigation ul {
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
+.navigation a.current {
+  background-color: white; }
+
+@media screen and (max-width: 700px) {
+  .navigation {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 30px; }
+  .navigation a {
+    display: block; }
+  .navigation ul {
+    position: sticky;
+    top: 0; }
+  .landing {
+    margin-left: 0;
+    padding: 0;
+    width: 100%; } }
+
+@media screen and (max-width: 300px) {
+  .navigation a {
+    text-align: center;
+    float: none;
+    width: 100%; } }
 
 /* PANEL GRID */
 .projects {

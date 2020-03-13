@@ -9,317 +9,344 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="site-title">
             <h1><span class="highlight-blue">Syndrome</span></h1>
             <h6>A CSS framework built in Sass by Chiazo</h6>
         </div>
     </header>
-
-    <div>
-        <h2>What is it?</h2>
-        <p><span class="highlight-yellow">Syndrome</span> is a stylesheet compiled into CSS via Sass to make my life
-            easier when setting up future projects.
-        </p>
-    </div>
-    <div>
-        <h2>Components</h2>
+    <nav class="navigation" id="navigation">
+        <h2 class="nav-title">Components</h2>
         <div class="buttons">
-            <a href="#grids" class="a-button">Grids</a>
-            <a href="#tables" class="a-button">Tables</a>
-            <a href="#containers" class="a-button">Containers</a>
-            <a href="#text-headers" class="a-button">Text + Headers</a>
-            <a href="#forms" class="a-button">Forms</a>
-            <a href="#all-buttons" class="a-button">Buttons</a>
-            <a href="#images" class="a-button">Images</a>
-            <a href="#lists" class="a-button">Lists</a>
-            <a href="#panels" class="panels">Panels</a>
+            <ul>
+                <li><a href="#grids" class="a-button">Grids</a></li>
+                <li><a href="#tables" class="a-button">Tables</a></li>
+                <li><a href="#containers" class="a-button">Containers</a></li>
+                <li><a href="#text-headers" class="a-button">Text + Headers</a></li>
+                <li><a href="#forms" class="a-button">Forms</a></li>
+                <li><a href="#all-buttons" class="a-button">Buttons</a></li>
+                <li><a href="#images" class="a-button">Images</a></li>
+                <li><a href="#lists" class="a-button">Lists</a></li>
+                <li><a href="#panels" class="a-button">Panels</a></li>
+            </ul>  
         </div>
-    </div>
-    <div>
-        <h2 id="grids">Grids</h2>
-        <p>Grids can be used for anything and are responsive. <b>Class Name: <u>grid</u></b></p>
-        <h4>1x1 <span class="highlight-yellow">(class="cell-1x1")</span></h4>
-        <div class="wrapper">
-            <div class="grid cell-1x1">
-                <div class="cell">Cell 1</div>
-                <div class="cell">Cell 2</div>
-            </div>
-        </div>
-        <h4>2x2 <span class="highlight-yellow">(class="cell-2x2")</span></h4>
-        <div class="wrapper">
-            <div class="grid cell-2x2">
-                <div class="cell">Cell 1</div>
-                <div class="cell">Cell 2</div>
-                <div class="cell">Cell 3</div>
-                <div class="cell">Cell 4</div>
-            </div>
-        </div>
-        <h4>2x6 <span class="highlight-yellow">(class="cell-2x6")</span></h4>
-        <div class="wrapper">
-            <div class="grid cell-2x6">
-                <div class="cell">Cell 1</div>
-                <div class="cell">Cell 2</div>
-                <div class="cell">Cell 3</div>
-                <div class="cell">Cell 4</div>
-                <div class="cell">Cell 5</div>
-                <div class="cell">Cell 6</div>
-                <div class="cell">Cell 7</div>
-                <div class="cell">Cell 8</div>
-                <div class="cell">Cell 9</div>
-                <div class="cell">Cell 10</div>
-            </div>
-        </div>
-        <h4>3x3 <span class="highlight-yellow">(class="cell-3x3")</span></h4>
-        <div class="wrapper">
-            <div class="grid cell-3x3">
-                <div class="cell">Cell 1</div>
-                <div class="cell">Cell 2</div>
-                <div class="cell">Cell 3</div>
-                <div class="cell">Cell 4</div>
-                <div class="cell">Cell 5</div>
-                <div class="cell">Cell 6</div>
-                <div class="cell">Cell 7</div>
-                <div class="cell">Cell 8</div>
-                <div class="cell">Cell 9</div>
-            </div>
-        </div>
+    </nav>
 
-    </div>
-    <div>
-        <h2 id="tables">Tables</h2>
-        <p>Tables can be edited or just used to display information. </p>
-        <h4>Normal Table</h4>
-        <div class="wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>First Header</th>
-                        <th>Second Header</th>
-                        <th>Third Header</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h4>Without Borders <span class="highlight-green">(class="borderless")</span></h4>
-        <div class="wrapper">
-            <table class="borderless">
-                <thead>
-                    <tr>
-                        <th>First Header</th>
-                        <th>Second Header</th>
-                        <th>Third Header</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h4>Alternating Colored Rows <span class="highlight-green">(class="alternate")</span></h4>
-        <div class="wrapper">
-            <table class="alternate">
-                <thead>
-                    <tr>
-                        <th>First Header</th>
-                        <th>Second Header</th>
-                        <th>Third Header</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h4>Colored Header <span class="highlight-green">(class="colored-header")</span></h4>
-        <div class="wrapper">
-            <table class="colored-header">
-                <thead>
-                    <tr>
-                        <th>First Header</th>
-                        <th>Second Header</th>
-                        <th>Third Header</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div>
-        <h2 id="containers">Containers + Wrappers</h2>
-        <p>Divs that hold things in a stylish way. Use the container to hold multiple things & save the wrapper for 1!
-            <b>Class Names: <u>container, wrapper</u></b></p>
-        <div class="wrapper">
+    <main class="landing">
+        <section id="intro">
             <div>
-                <h4>Wrapper</h4>
+                <h2>What is it?</h2>
+                <p><span class="highlight-yellow">Syndrome</span> is a stylesheet compiled into CSS via Sass to make
+                    my life
+                    easier when setting up future projects.
+                </p>
             </div>
-        </div>
-        <div class="container">
-            <div>
-                <h4>Container</h4>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h2 id="text-headers">Text + Headers</h2>
-        <p>Here are all the different ways text can appear.</p>
-        <div class="text-headers">
-            <h1>H1: Syndrome</h1>
-            <h2>H2: Syndrome</h2>
-            <h3>H3: Syndrome</h3>
-            <h4>H4: Syndrome</h4>
-            <h5>H5: Syndrome</h5>
-            <h6>H6: Syndrome</h6>
-            <p>P: Syndrome</p>
-            <p><b>Bold: Syndrome</b></p>
-            <p><u>Underlined: Syndrome</u></p>
-            <a href="#text-headers">Anchor: Syndrome</a>
-        </div>
-    </div>
-    <div>
-        <h2 id="forms">Forms</h2>
-        <p>Forms take in user input. Save the information for later or dont; it's up to you.'</p>
-        <h4>Normal Form <span class="highlight-green">(class="main-form")</span></h4>
-        <div class="container">
-            <div class="main-form">
-                <form id="input-form">
-                    <fieldset>
-                        <legend>Fill Out This Form: </legend>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name..."/>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email..."/>
-                        <br>
-                        <label for="category">Category</label>
-                        <select id="category" size="2" multiple>
-                            <option value="school" selected>School</option>
-                            <option value="work">Work</option>
-                            <option value="personal">Personal</option>
-                        </select>
-                        <br>
-                        <label for="text-field">Text Input</label>
-                        <textarea name="text-field" rows="3" cols="30"></textarea>
-                        <button type="button" name="submit_b" id="submit_b">Submit!</button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-        <h4>Table Form <span class="highlight-green">(class="table")</span></h4>
-        <div class="">
-            <div class="table">
-                <div class="thead">
-                    <tr class="tr">
-                        <div class="td">Task Name</div>
-                        <div class="td">Est. Time (mins)</div>
-                        <div class="td">Category</div>
-                    </tr>
+        </section>
+        <section id="grids">
+            <div> 
+                <h2>Grids</h2>
+                <p>Grids can be used for anything and are responsive. <b>Class Name: <u>grid</u></b></p>
+                <h4>1x1 <span class="highlight-yellow">(class="cell-1x1")</span></h4>
+                <div class="wrapper">
+                    <div class="grid cell-1x1">
+                        <div class="cell">Cell 1</div>
+                        <div class="cell">Cell 2</div>
+                    </div>
                 </div>
-                <div class="tbody">
-                    <form class="tr" id="task-form" method="post">
-                        <span class="td"><input type="text" placeholder="Task Name"/></span>
-                        <span class="td"><input type="number" value="20" placeholder="20 mins"/></span>
-                        <span class="td"><select>
-                            <option value="school" selected>School</option>
-                            <option value="work">Work</option>
-                            <option value="personal">Personal</option>
-                        </select></span>
-                    </form>
-                    <div class="tr">
-                        <span class="td"><input type="text" placeholder="Task Name"/></span>
-                        <span class="td"><input type="number" placeholder="20 mins"/></span>
-                        <span class="td"><select>
-                            <option value="school" selected>School</option>
-                            <option value="work">Work</option>
-                            <option value="personal">Personal</option>
-                        </select></span>
+                <h4>2x2 <span class="highlight-yellow">(class="cell-2x2")</span></h4>
+                <div class="wrapper">
+                    <div class="grid cell-2x2">
+                        <div class="cell">Cell 1</div>
+                        <div class="cell">Cell 2</div>
+                        <div class="cell">Cell 3</div>
+                        <div class="cell">Cell 4</div>
                     </div>
-                    <div class="tr">
-                        <span class="td"><input type="text" placeholder="Task Name"/></span>
-                        <span class="td"><input type="number" placeholder="20 mins"/></span>
-                        <span class="td"><select>
-                            <option value="school" selected>School</option>
-                            <option value="work">Work</option>
-                            <option value="personal">Personal</option>
-                        </select></span>
+                </div>
+                <h4>2x6 <span class="highlight-yellow">(class="cell-2x6")</span></h4>
+                <div class="wrapper">
+                    <div class="grid cell-2x6">
+                        <div class="cell">Cell 1</div>
+                        <div class="cell">Cell 2</div>
+                        <div class="cell">Cell 3</div>
+                        <div class="cell">Cell 4</div>
+                        <div class="cell">Cell 5</div>
+                        <div class="cell">Cell 6</div>
+                        <div class="cell">Cell 7</div>
+                        <div class="cell">Cell 8</div>
+                        <div class="cell">Cell 9</div>
+                        <div class="cell">Cell 10</div>
                     </div>
-                    <button type="submit" name="submit_b" id="submit_b" form="task-form">Submit!</button>
+                </div>
+                <h4>3x3 <span class="highlight-yellow">(class="cell-3x3")</span></h4>
+                <div class="wrapper">
+                    <div class="grid cell-3x3">
+                        <div class="cell">Cell 1</div>
+                        <div class="cell">Cell 2</div>
+                        <div class="cell">Cell 3</div>
+                        <div class="cell">Cell 4</div>
+                        <div class="cell">Cell 5</div>
+                        <div class="cell">Cell 6</div>
+                        <div class="cell">Cell 7</div>
+                        <div class="cell">Cell 8</div>
+                        <div class="cell">Cell 9</div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+           
+        <section id="tables">
+            <div>
+                <h2>Tables</h2>
+                <p>Tables can be edited or just used to display information. </p>
+                <h4>Normal Table</h4>
+                <div class="wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Header</th>
+                                <th>Second Header</th>
+                                <th>Third Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Without Borders <span class="highlight-green">(class="borderless")</span></h4>
+                <div class="wrapper">
+                    <table class="borderless">
+                        <thead>
+                            <tr>
+                                <th>First Header</th>
+                                <th>Second Header</th>
+                                <th>Third Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Alternating Colored Rows <span class="highlight-green">(class="alternate")</span></h4>
+                <div class="wrapper">
+                    <table class="alternate">
+                        <thead>
+                            <tr>
+                                <th>First Header</th>
+                                <th>Second Header</th>
+                                <th>Third Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Colored Header <span class="highlight-green">(class="colored-header")</span></h4>
+                <div class="wrapper">
+                    <table class="colored-header">
+                        <thead>
+                            <tr>
+                                <th>First Header</th>
+                                <th>Second Header</th>
+                                <th>Third Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </section>
+        <section id="containers">
+            <div>
+                <h2>Containers + Wrappers</h2>
+                <p>Divs that hold things in a stylish way. Use the container to hold multiple things & save the
+                    wrapper for 1!
+                    <b>Class Names: <u>container, wrapper</u></b></p>
+                <div class="wrapper">
+                    <div>
+                        <h4>Wrapper</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <h4>Container</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="text-headers">
+            <div>
+                <h2>Text + Headers</h2>
+                <p>Here are all the different ways text can appear.</p>
+                <div class="text-headers">
+                    <h1>H1: Syndrome</h1>
+                    <h2>H2: Syndrome</h2>
+                    <h3>H3: Syndrome</h3>
+                    <h4>H4: Syndrome</h4>
+                    <h5>H5: Syndrome</h5>
+                    <h6>H6: Syndrome</h6>
+                    <p>P: Syndrome</p>
+                    <p><b>Bold: Syndrome</b></p>
+                    <p><u>Underlined: Syndrome</u></p>
+                    <a href="#text-headers">Anchor: Syndrome</a>
+                </div>
+            </div>
+        </section>
+        <section id="forms">
+            <div>
+                <h2>Forms</h2>
+                <p>Forms take in user input. Save the information for later or dont; it's up to you.'</p>
+                <h4>Normal Form <span class="highlight-green">(class="main-form")</span></h4>
+                <div class="wrapper">
+                    <div class="main-form">
+                        <form id="input-form">
+                            <fieldset>
+                                <legend>Fill Out This Form: </legend>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your Name..." />
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your Email..." />
+                                <br>
+                                <label for="category">Category</label>
+                                <select id="category" size="2" multiple>
+                                    <option value="school" selected>School</option>
+                                    <option value="work">Work</option>
+                                    <option value="personal">Personal</option>
+                                </select>
+                                <br>
+                                <label for="text-field">Text Input</label>
+                                <textarea name="text-field" rows="3" cols="30"></textarea>
+                                <button type="button" name="submit_b" id="submit_b">Submit!</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <h4>Table Form <span class="highlight-green">(class="table")</span></h4>
+                <div class="wrapper">
+                    <div class="table">
+                        <div class="thead">
+                            <tr class="tr">
+                                <div class="td">Task Name</div>
+                                <div class="td">Est. Time (mins)</div>
+                                <div class="td">Category</div>
+                            </tr>
+                        </div>
+                        <div class="tbody">
+                            <form class="tr" id="task-form" method="post">
+                                <span class="td"><input type="text" placeholder="Task Name" /></span>
+                                <span class="td"><input type="number" value="20" placeholder="20 mins" /></span>
+                                <span class="td"><select>
+                                        <option value="school" selected>School</option>
+                                        <option value="work">Work</option>
+                                        <option value="personal">Personal</option>
+                                    </select></span>
+                            </form>
+                            <div class="tr">
+                                <span class="td"><input type="text" placeholder="Task Name" /></span>
+                                <span class="td"><input type="number" placeholder="20 mins" /></span>
+                                <span class="td"><select>
+                                        <option value="school" selected>School</option>
+                                        <option value="work">Work</option>
+                                        <option value="personal">Personal</option>
+                                    </select></span>
+                            </div>
+                            <div class="tr">
+                                <span class="td"><input type="text" placeholder="Task Name" /></span>
+                                <span class="td"><input type="number" placeholder="20 mins" /></span>
+                                <span class="td"><select>
+                                        <option value="school" selected>School</option>
+                                        <option value="work">Work</option>
+                                        <option value="personal">Personal</option>
+                                    </select></span>
+                            </div>
+                            <button type="submit" name="submit_b" id="submit_b" form="task-form">Submit!</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+       
+        <section id="all-buttons">
+            <div>
+                <h2>Buttons</h2>
+                <p>Every button I could imagine!</p>
+                <button>Default Button</button>
+                <button class="green-button">Green Button</button>
+                <button class="transp-button">Transparent Button</button>
+                <button class="pink-button">Pink Button</button>
+            </div>
+        </section>
+       <section id="images">
+        <div>
+            <h2>Images</h2>
+            <p>Add a responsive image if you'd like.</p>
         </div>
-        
-    </div>
-    <div class="thead">
-    </div>
-    <div>
-        <h2 id="all-buttons">Buttons</h2>
-        <p>Every button I could imagine!</p>
-        <button>Default Button</button>
-        <button class="green-button">Green Button</button>
-        <button class="transp-button">Transparent Button</button>
-        <button class="pink-button">Pink Button</button>
-    </div>
-    <div>
-        <h2 id="images">Images</h2>
-        <p>Add a responsive image if you'd like.</p>
-    </div>
-    <div>
-        <h2 id="lists">Lists</h2>
-        <p>Who doesn't love listing things?</p>
-    </div>
-  
-
-    <div>
-        <h2 id="panels">Panels</h2>
-        <p>A cool responsive way to show off.</p>
-    </div>
-    <a href="#top" id="return-top" class="return-top">Return to Top</a>
-
+       </section>
+        <section id="lists">
+            <div>
+                <h2>Lists</h2>
+                <p>Who doesn't love listing things?</p>
+            </div>
+        </section>
+        <section id="panels">
+            <div>
+                <h2 >Panels</h2>
+                <p>A cool responsive way to show off.</p>
+            </div>
+        </section>
+        <section>
+            <a href="#top" id="return-top" class="return-top">Return to Top</a>
+        </section>
+    </main>
+    <script src="js/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>

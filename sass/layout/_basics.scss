@@ -7,7 +7,9 @@ html {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: $line-height;
-      padding: 30px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      scroll-behavior: smooth;
   }
   
   *, *:before, *:after {
@@ -15,7 +17,9 @@ html {
   }
   
   div {
-    display: block;
+    // display: block;
+    margin-bottom: 1rem;
+    // border-bottom: ;
   }
   
   /* body */
@@ -23,11 +27,14 @@ html {
       text-align: justify; 
       color: $font-color;
       background-color: $bg-color;
-      padding: 1.2rem;
+      // padding: 1.2rem;
   }
   
   body {
+    margin: 0;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: min-content 1fr;
   }
 
 /* Anchors */
@@ -58,6 +65,7 @@ a {
   h4 {
     color: $font-color;
     line-height: 1.2;
+    
   }
   
   h1 {
