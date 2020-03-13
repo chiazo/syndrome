@@ -25,6 +25,10 @@
   max-width: 90%;
   margin-bottom: 3%;
   margin-top: 10px;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    max-width: 100%;
+  }
 }
 
 [type="button"],

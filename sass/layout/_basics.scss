@@ -35,6 +35,11 @@ html {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: min-content 1fr;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      display: block;
+      grid-template-columns: none;
+    }
   }
 
 /* Anchors */

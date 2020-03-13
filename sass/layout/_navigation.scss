@@ -11,6 +11,7 @@ $nav-width: 220px;
   color: #1f59b0;
   border-right: 2px solid lightgray;
   white-space: nowrap;
+  display: block;
 }
 
 .on-scroll {
@@ -28,7 +29,7 @@ $nav-width: 220px;
 }
 
 section {
-  padding: 2rem;
+  padding: 1rem 1rem 0 1rem; 
   margin: 0 0 0;
 }
 
@@ -36,12 +37,12 @@ main {
   // padding-bottom: 40rem;
 }
 
-@media (min-height: 300px) {
-  .navigation ul {
-    position: sticky;
-    top: 0;
-  }
-}
+// @media (min-height: 300px) {
+//   .navigation ul {
+//     position: sticky;
+//     top: 0;
+//   }
+// }
 
 .navigation a {
   display: block;
@@ -51,6 +52,7 @@ main {
 
 .navigation ul {
   text-decoration: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -60,7 +62,7 @@ main {
   // color: $blue-highlight;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .navigation {
     width: 100%;
     height: auto;
@@ -68,6 +70,7 @@ main {
     padding: 0;
     margin: 0;
     top: 30px;
+    border-right: none;
   }
 
   .navigation a {
