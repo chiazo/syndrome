@@ -10,7 +10,7 @@ window.addEventListener("scroll", e => {
 
     navLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        if (fromTop <= 96) {
+        if (fromTop <= 76) {
             document.getElementById("navigation").classList.remove("on-scroll");
         } else {
             document.getElementById("navigation").classList.add("on-scroll");

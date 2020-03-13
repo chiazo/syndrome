@@ -11,23 +11,41 @@ $nav-width: 220px;
   color: #1f59b0;
   border-right: 2px solid lightgray;
   white-space: nowrap;
-  display: block;
+  display: inline-block;
 }
 
 .on-scroll {
   top: 0;
 }
 
-#page-nav label, #hamburger {
+label[for="hamburger"], #hamburger {
   display: none;
 }
 
+
 @media screen and (max-width: $tablet-breakpoint) {
-  #page-nav label {
+  label[for="hamburger"] {
+    font-size: 20 em;
+  }
+
+  #navigation label {
     display: inline-block;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
+    float: right;
+  }
+
+  #navigation ul li {
+    display: block;
+  }
+
+  #navigation ul {
+    display: none;
+  }
+
+  #navigation input:checked ~ ul {
+    display: block;
   }
 }
 

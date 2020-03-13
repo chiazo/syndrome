@@ -19,7 +19,6 @@
   white-space: nowrap;
   line-height: 1;
   border-radius: 10px;
-  max-width: 90%;
   margin-bottom: 3%;
   margin-top: 10px; }
   @media screen and (max-width: 980px) {
@@ -471,10 +470,29 @@ td {
   color: #1f59b0;
   border-right: 2px solid lightgray;
   white-space: nowrap;
-  display: block; }
+  display: inline-block; }
 
 .on-scroll {
   top: 0; }
+
+label[for="hamburger"], #hamburger {
+  display: none; }
+
+@media screen and (max-width: 980px) {
+  label[for="hamburger"] {
+    font-size: 20 em; }
+  #navigation label {
+    display: inline-block;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    float: right; }
+  #navigation ul li {
+    display: block; }
+  #navigation ul {
+    display: none; }
+  #navigation input:checked ~ ul {
+    display: block; } }
 
 .landing {
   margin-left: 220px;
