@@ -55,7 +55,7 @@ label[for="hamburger"], #hamburger {
   height: auto;
   // max-width: calc(100% - 230px);
   padding: 0 3rem 40rem;
-  width: 100%;
+  max-width: 100%;
   z-index: 1;
   // padding-bottom: 40rem;
   border-left: 2px solid lightgray;
@@ -119,7 +119,7 @@ main {
   .landing {
     margin-left: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
   }
 
   
